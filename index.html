@@ -31,3 +31,27 @@ Mas a Copa também adora um recorde bizarro. Você sabia que o maior artilheiro 
 </P>
 
 <img src="imagen/imagem04.JPG">
+
+
+/* PALETA DE CORES: NOSTALGIA RETRÔ (COPA DO MUNDO) */
+:root {
+  --cor-primaria: #0F2042;    /* Azul Royal (Títulos, Menus e Botões Principais) */
+  --cor-fundo: #F4EFEA;       /* Creme Vintage (Fundo da página - excelente UX) */
+  --cor-destaque: #C84B31;    /* Vermelho Terracota (Banners, Links e Curiosidades) */
+  --cor-texto: #2D3748;       /* Cinza Escuro (Texto dos artigos - leitura leve) */
+}
+
+/* Exemplo prático de aplicação no corpo do blog */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Georgia', serif; /* Opcional: dá o toque de jornal clássico */
+}
+
+h1, h2, h3 {
+  color: var(--cor-primaria);
+}
+
+a, .destaque-curiosidade {
+  color: var(--cor-destaque);
+}
