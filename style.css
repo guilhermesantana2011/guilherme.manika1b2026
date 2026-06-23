@@ -4,3 +4,26 @@
   --cor-destaque: #C84B31;
   --cor-texto: #2D3748;
 }
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+header { background-color: #f5f5f7;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+nav { margin: 15px 0; }
+
+main {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding: 10px; }
