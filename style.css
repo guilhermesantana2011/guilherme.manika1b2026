@@ -53,16 +53,16 @@ footer {
 
 
     body {
-    background-color: #ff0202;
-    color: #002fff;
+    background-color: #6d6161;
+    color: #425195;
     font-family: sans-serif;
 }
 header {
-    border-bottom: 2px solid #ff0022;
+    border-bottom: 2px solid #82454d;
     padding: 10px;
 }
 nav a {
-    color: #e9071d;
+    color: #773b41;
     text-decoration: none;
     font-weight: bold;
 }
