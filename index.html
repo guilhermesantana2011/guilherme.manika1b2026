@@ -58,51 +58,18 @@ function pesquisar() {
   <h2>Os Bastidores da Escolha do País-Sede</h2>
 </section>
 
-document.addEventListener("DOMContentLoaded", () => {
-    const pesquisa = document.querySelector("input[type='search'], input[type='text']");
+<script>
+function irParaSecao(id) {
+  const elemento = document.getElementById(id);
 
-    if (!pesquisa) return;
-
-    pesquisa.addEventListener("keydown", (e) => {
-        if (e.key !== "Enter") return;
-
-        const valor = pesquisa.value
-            .trim()
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "");
-
-        const secoes = document.querySelectorAll("section, article");
-
-        for (const secao of secoes) {
-            const titulo = secao.querySelector("h1, h2, h3");
-
-            if (!titulo) continue;
-
-            const texto = titulo.textContent
-                .toLowerCase()
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "");
-
-            if (texto.includes(valor)) {
-                secao.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-                break;
-            }
-        }
+  if (elemento) {
+    elemento.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
     });
-});
-
-html {
-    scroll-behavior: smooth;
+  }
 }
-
-section,
-article {
-    scroll-margin-top: 80px; 
-}
+</script>
 
 </header>
     <nav>
