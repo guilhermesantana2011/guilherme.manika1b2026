@@ -36,11 +36,73 @@ function pesquisar() {
 </script>
 
 
+ function irParaSecao(id) 
+  const elemento = document.getElementById(id);
 
-document.getElementById("grandes-lendas").scrollIntoView({
-  behavior: "smooth",
-  block: "start"  
+  if (elemento) {
+    elemento.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  <section id="historia-das-copas">
+  <h2>História das Copas</h2>
+</section>
+
+<section id="grandes-lendas">
+  <h2>Grandes Lendas e Recordistas do Torneio</h2>
+</section>
+
+<section id="bastidores">
+  <h2>Os Bastidores da Escolha do País-Sede</h2>
+</section>
+
+document.addEventListener("DOMContentLoaded", () => {
+    const pesquisa = document.querySelector("input[type='search'], input[type='text']");
+
+    if (!pesquisa) return;
+
+    pesquisa.addEventListener("keydown", (e) => {
+        if (e.key !== "Enter") return;
+
+        const valor = pesquisa.value
+            .trim()
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "");
+
+        const secoes = document.querySelectorAll("section, article");
+
+        for (const secao of secoes) {
+            const titulo = secao.querySelector("h1, h2, h3");
+
+            if (!titulo) continue;
+
+            const texto = titulo.textContent
+                .toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "");
+
+            if (texto.includes(valor)) {
+                secao.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+                break;
+            }
+        }
+    });
 });
+
+html {
+    scroll-behavior: smooth;
+}
+
+section,
+article {
+    scroll-margin-top: 80px; 
+}
 
 </header>
     <nav>
