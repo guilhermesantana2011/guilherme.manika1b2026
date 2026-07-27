@@ -19,6 +19,21 @@ placeholder="pensar...">
 
 <h2 id="bastidores">Os Bastidores da Escolha do País-Sede</h2>
    
+<script>
+function pesquisar() {
+    let texto = document.getElementById("buscar").value.toLowerCase();
+
+    if (texto.includes("história") || texto.includes("copa")) {
+        document.getElementById("historia").scrollIntoView({behavior:"smooth"});
+    } else if (texto.includes("lendas") || texto.includes("recordistas")) {
+        document.getElementById("lendas").scrollIntoView({behavior:"smooth"});
+    } else if (texto.includes("bastidores") || texto.includes("país")) {
+        document.getElementById("bastidores").scrollIntoView({behavior:"smooth"});
+    } else {
+        alert("Nenhum resultado encontrado.");
+    }
+}
+</script>
 
 </header>
     <nav>
