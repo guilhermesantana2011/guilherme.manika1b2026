@@ -226,4 +226,76 @@ footer {
 
 
 
+    :root{
+  --verde:#0B6E4F;
+  --verde-hover:#09543D;
+  --azul:#0A3D91;
+  --azul-claro:#0A66C2;
+  --dourado:#F4C430;
+  --roxo:#5B2C83;
+  --branco:#FFFFFF;
+  --fundo:#F5F7FA;
+  --texto:#222222;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:var(--fundo);
+  color:var(--texto);
+  font-family:Arial,Helvetica,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color:var(--azul);
+}
+
+.card{
+  background:var(--branco);
+  border-radius:20px;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  padding:25px;
+}
+
+button,
+.btn{
+  background:var(--verde);
+  color:#fff;
+  border:none;
+  border-radius:12px;
+  padding:12px 24px;
+  transition:.3s;
+}
+
+button:hover,
+.btn:hover{
+  background:var(--verde-hover);
+}
+
+a{
+  color:var(--azul-claro);
+  text-decoration:none;
+}
+
+a:hover{
+  color:var(--azul);
+}
+
+#historia{
+  border-left:6px solid var(--azul);
+}
+
+#origem{
+  border-left:6px solid var(--verde);
+}
+
+#lendas{
+  border-left:6px solid var(--dourado);
+}
+
+#bastidores{
+  border-left:6px solid var(--roxo);
+}
+
+
     
