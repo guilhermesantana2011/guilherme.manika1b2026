@@ -232,7 +232,7 @@ footer {
   --azul:#0A3D91;
   --azul-claro:#0A66C2;
   --dourado:#F4C430;
-  --roxo:#5B2C83;
+  --dourado;#f4C430
   --branco:#FFFFFF;
   --fundo:#F5F7FA;
   --texto:#222222;
@@ -334,6 +334,72 @@ body{
 section{
     padding:100px 40px;
     min-height:100vh;
+}
+
+
+:root{
+    --primary:#003B95;
+    --secondary:#00AEEF;
+    --gold:#FFD700;
+    --dark:#001B44;
+    --light:#F4F8FC;
+    --white:#FFFFFF;
+    --text:#1E293B;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(180deg,#F4F8FC,#EAF3FF);
+    color:var(--text);
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.navbar{
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.navbar a{
+    color:var(--white);
+    font-weight:700;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:var(--gold);
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--primary);
+}
+
+.card{
+    background:var(--white);
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    border-top:5px solid var(--gold);
+}
+
+button,
+.btn{
+    background:linear-gradient(90deg,var(--primary),var(--secondary));
+    color:var(--white);
+    border:none;
+    border-radius:12px;
+}
+
+button:hover,
+.btn:hover{
+    background:linear-gradient(90deg,var(--secondary),var(--primary));
+}
+
+a{
+    color:var(--primary);
+}
+
+a:hover{
+    color:var(--gold);
 }
 
 
