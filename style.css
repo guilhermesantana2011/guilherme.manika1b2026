@@ -298,4 +298,43 @@ a:hover{
 }
 
 
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    padding-top:80px;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0A3D91;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+    z-index:9999;
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#F4C430;
+}
+
+section{
+    padding:100px 40px;
+    min-height:100vh;
+}
+
+
     
