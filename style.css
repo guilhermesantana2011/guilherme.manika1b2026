@@ -132,6 +132,14 @@ button,
 }
 ```
 
-
+img{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    margin:20px auto;
+    border-radius:15px;
+    object-fit:cover;
+}
 
     
