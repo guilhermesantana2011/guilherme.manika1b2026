@@ -200,7 +200,7 @@ img{width:70% ;
 }
 
 body {
-    background-color: #a56e6e;
+    background-color: #ffffff;
     color: #3c3aad;
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -236,7 +236,7 @@ footer {
   --dourado;#f4C430
   --branco:#FFFFFF;
 
-  --texto:#222222;
+  
 }
 
 body{
@@ -294,7 +294,7 @@ a:hover{
 }
 
 #bastidores{
-  border-left:6px solid var();
+      border-left:6px solid var(--dourado);
 }
 
 
