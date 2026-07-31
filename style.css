@@ -130,16 +130,11 @@ button,
     width:100%;
 }
 }
-```
-
 img{
+    width:400px;
+    height:250px;
+    object-fit:cover;
     display:block;
-    width:100%;
-    max-width:500px;
-    height:auto;
     margin:20px auto;
     border-radius:15px;
-    object-fit:cover;
 }
-
-    
