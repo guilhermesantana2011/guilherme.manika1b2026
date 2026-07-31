@@ -172,11 +172,11 @@ footer {
     font-family: sans-serif;
 }
 header {
-    border-bottom: 2px solid #6e1723;
+    border-bottom: 2px solid #faf5f6;
     padding: 10px;
 }
 nav a {
-    color: #841d27;
+    color: #f5f1f1;
     text-decoration: none;
     font-weight: bold;
 }
